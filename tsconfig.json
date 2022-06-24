@@ -1,0 +1,25 @@
+{
+  "ts-node": {
+    "transpileOnly": true,
+    "compilerOptions": {
+      "module": "CommonJS",
+    }
+  },
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "./build/",
+    "noImplicitAny": false,
+    "module": "es6",
+    "target": "es6",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "baseUrl": "./src/",
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "models": ["models/"],
+      "utils": ["utils/"],
+      "typings": ["typings/"]
+    }
+  }
+}

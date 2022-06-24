@@ -1,0 +1,26 @@
+{
+  "name": "moralis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "sync": "env-cmd -e cli moralis-admin-cli connect-local-devchain --frpcPath ./frpc",
+    "watch": "env-cmd -e cli moralis-admin-cli watch-cloud-folder --moralisSubdomain subdomain.moralis.io --autoSave 1 --moralisCloudfolder build/",
+    "logs": "env-cmd -e cli moralis-admin-cli get-logs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "moralis": "^1.8.0",
+    "moralis-admin-cli": "^2.1.16",
+    "ts-loader": "^9.3.1",
+    "ts-node": "^10.8.1",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
